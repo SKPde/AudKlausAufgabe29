@@ -16,12 +16,11 @@ public class ListeF {
 		Comparable ruckgabe = inhalt[k];
 		lastIndex--;
 
-		for (int x = k; x <= lastIndex; x++) {
-			inhalt[k] = inhalt[k + 1];
+		for (int x = k; x <= lastIndex+1; x++) {
+			inhalt[x] = inhalt[x + 1];
 		}
 
 		return ruckgabe;
-
 	}
 	
 	public void einfuegen(Comparable c) {
@@ -51,9 +50,9 @@ public class ListeF {
 		liste.remove(3);
 		
 		liste.einfuegen("Kübelhausen");
-		liste.einfuegen("Aubach");
+		liste.einfuegen("Vormberg");
 		
-		liste.remove(2);
+		liste.remove(1);
 		
 		liste.ausgeben();
 	}
